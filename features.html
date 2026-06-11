@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Features — MDCN Studio | 23 Modules for Medical Device Compliance</title>
+  <meta name="description" content="All 23 MDCN Studio modules — Dashboard, DHF, Documents, CAPA, Risk Management, Audits, AI Assistant, Inventory, Purchase Orders, Invoice Management and more. Every module maps to a CDSCO or ISO 13485 clause."/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='12' width='24' height='8' rx='2' fill='%231A56DB'/%3E%3Crect x='12' y='4' width='8' height='24' rx='2' fill='%231A56DB'/%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="assets/mdcn-logo.svg" alt="MDCN Studio" class="logo-img"/></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="features.html" style="color:var(--primary);">Product</a></li>
+        <li><a href="compliance.html">Compliance</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta-group">
+      <a href="https://4rgdsiupne.ap-south-1.awsapprunner.com/login" class="btn btn-outline btn-sm">Sign In</a>
+      <a href="mailto:admin@mdcyclonova.com?subject=Demo Request" class="btn btn-primary btn-sm">Book a Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">Platform</div>
+    <h1>23 Modules. One Platform. Zero Compliance Gaps.</h1>
+    <p>Every module maps directly to a CDSCO, ISO 13485, 21 CFR Part 11, or EU MDR requirement — so you always know your coverage.</p>
+  </div>
+</section>
+
+<!-- Filter + Module Grid -->
+<section>
+  <div class="container">
+    <div class="filter-bar" role="group" aria-label="Filter modules by regulation">
+      <button class="filter-btn active" onclick="filterModules('all', this)">All Modules</button>
+      <button class="filter-btn" onclick="filterModules('cdsco', this)">CDSCO MDR 2017</button>
+      <button class="filter-btn" onclick="filterModules('iso', this)">ISO 13485</button>
+      <button class="filter-btn" onclick="filterModules('cfr', this)">21 CFR Part 11</button>
+      <button class="filter-btn" onclick="filterModules('eumdr', this)">EU MDR</button>
+    </div>
+
+    <div class="modules-grid" id="modulesGrid">
+
+      <!-- 1. Dashboard -->
+      <div class="module-card" data-regs="cdsco iso cfr eumdr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">📊</div>
+          <h3>Dashboard</h3>
+        </div>
+        <p class="mod-desc">Real-time compliance metrics, module health, and open action items across all QMS modules.</p>
+        <ul class="mod-capabilities">
+          <li>Live KPI widgets — CAPA status, audit readiness, DHF completeness</li>
+          <li>Cross-module risk heatmap with overdue action alerts</li>
+          <li>Management review data export for ISO 13485 §5.6</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span><span class="reg-tag">21 CFR Part 11</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">ISO 13485 §5.6 Management review</span>
+        </div>
+      </div>
+
+      <!-- 2. CRM -->
+      <div class="module-card" data-regs="cdsco">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🏢</div>
+          <h3>CRM &amp; Enquiries</h3>
+        </div>
+        <p class="mod-desc">Customer relationship management tailored for medical device sales — distributors, hospitals, and procurement teams.</p>
+        <ul class="mod-capabilities">
+          <li>Lead pipeline with tender and RFQ stage automation</li>
+          <li>Regulatory inquiry tracking and complaint logging</li>
+          <li>Customer document vault linked to post-market surveillance</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span>
+          <span class="mod-clause">CDSCO MDR 2017 Schedule 5 Para 11 — Complaint handling</span>
+        </div>
+      </div>
+
+      <!-- 3. Projects -->
+      <div class="module-card" data-regs="cdsco iso eumdr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">📁</div>
+          <h3>Projects &amp; Tasks</h3>
+        </div>
+        <p class="mod-desc">Product development project management with regulatory milestone tracking and DHF linkage.</p>
+        <ul class="mod-capabilities">
+          <li>Gate review milestones with QMS document deliverable checklist</li>
+          <li>DHF linkage — project closes only when DHF is complete</li>
+          <li>Cross-team assignment with responsible party tracking</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">ISO 13485 §7.1 Planning of product realisation</span>
+        </div>
+      </div>
+
+      <!-- 4. DHF -->
+      <div class="module-card" data-regs="cdsco cfr eumdr" id="dhf">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">📐</div>
+          <h3>Design History File (DHF)</h3>
+        </div>
+        <p class="mod-desc">Complete device lifecycle documentation — design inputs, outputs, verification, validation — with e-signatures and full traceability.</p>
+        <ul class="mod-capabilities">
+          <li>Device lifecycle tracking from design input to design transfer</li>
+          <li>DHF completeness score with gap identification</li>
+          <li>E-signature locking on section completion</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">21 CFR Part 11</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">21 CFR Part 820.181 / CDSCO Form MD-3 / EU MDR Annex II</span>
+        </div>
+      </div>
+
+      <!-- 5. Travellers / BHR -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🗺️</div>
+          <h3>Travellers / BHR</h3>
+        </div>
+        <p class="mod-desc">Manufacturing travellers and device build history records with step-by-step sign-off workflows.</p>
+        <ul class="mod-capabilities">
+          <li>Build record creation with production stage sign-off</li>
+          <li>In-process inspection records with pass/fail capture</li>
+          <li>Lot traceability linked to shipment records</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §7.5 Production and service provision controls</span>
+        </div>
+      </div>
+
+      <!-- 6. Shipment Tracking -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🚢</div>
+          <h3>Shipment Tracking</h3>
+        </div>
+        <p class="mod-desc">Device shipment records, lot tracking, and distribution documentation from factory to customer.</p>
+        <ul class="mod-capabilities">
+          <li>Lot/batch tracking with UDI fields for EU MDR readiness</li>
+          <li>Distribution records with e-signature on device release</li>
+          <li>Recall-ready lot search across all destinations and time periods</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §7.5.8 Handling, storage, and distribution</span>
+        </div>
+      </div>
+
+      <!-- 7. Documents & SOPs -->
+      <div class="module-card" data-regs="cdsco iso cfr eumdr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">📄</div>
+          <h3>Documents &amp; SOPs</h3>
+        </div>
+        <p class="mod-desc">Controlled document management with versioning, multi-level approval workflows, and 21 CFR Part 11 e-signatures.</p>
+        <ul class="mod-capabilities">
+          <li>Version control with Draft → Review → Approved → Superseded lifecycle</li>
+          <li>Multi-level approval with role-based signature authority matrix</li>
+          <li>CDSCO watermarks on document headers — inspection-ready</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span><span class="reg-tag">21 CFR Part 11</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">ISO 13485 §4.2.3 / 21 CFR Part 11 §11.50</span>
+        </div>
+      </div>
+
+      <!-- 8. Approvals & DCOs -->
+      <div class="module-card" data-regs="iso cfr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">✅</div>
+          <h3>Approvals &amp; DCOs</h3>
+        </div>
+        <p class="mod-desc">Document Change Orders — manage, track, and close changes to controlled documents with impact assessment.</p>
+        <ul class="mod-capabilities">
+          <li>Change impact assessment with linked document tracking</li>
+          <li>Expedited and standard approval workflow templates</li>
+          <li>Closure verification with effectiveness check</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">ISO 13485</span><span class="reg-tag">21 CFR Part 11</span>
+          <span class="mod-clause">ISO 13485 §4.2.4 Control of documents / §4.2.3</span>
+        </div>
+      </div>
+
+      <!-- 9. Risk Management -->
+      <div class="module-card" data-regs="iso eumdr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">⚠️</div>
+          <h3>Risk Management</h3>
+        </div>
+        <p class="mod-desc">ISO 14971-aligned risk register with severity/probability matrix, FMEA worksheets, and residual risk sign-off.</p>
+        <ul class="mod-capabilities">
+          <li>5×5 risk matrix with severity, probability, and detectability scoring</li>
+          <li>FMEA worksheets with failure mode and effect analysis</li>
+          <li>Residual risk acceptability review with e-signature requirement</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">ISO 13485</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">ISO 14971:2019 Risk management process / EU MDR Annex IX 2.6</span>
+        </div>
+      </div>
+
+      <!-- 10. CAPA & NCR -->
+      <div class="module-card" data-regs="cdsco iso cfr eumdr" id="capa">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🔄</div>
+          <h3>CAPA &amp; NCR</h3>
+        </div>
+        <p class="mod-desc">Corrective and Preventive Actions tracked from detection to verified closure. Non-Conformance Records with root cause and disposition.</p>
+        <ul class="mod-capabilities">
+          <li>8D methodology — root cause through effectiveness verification</li>
+          <li>Automatic CAPA creation from audit findings, NCRs, and complaints</li>
+          <li>CAPA cannot close without effectiveness verification sign-off</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span><span class="reg-tag">21 CFR Part 11</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">ISO 13485 §8.5.2-3 / CDSCO Schedule 5 Para 8–9</span>
+        </div>
+      </div>
+
+      <!-- 11. Audits -->
+      <div class="module-card" data-regs="cdsco iso cfr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🛡️</div>
+          <h3>Audit Management</h3>
+        </div>
+        <p class="mod-desc">Internal and external audit management, finding tracking, and CAPA linkage — CDSCO Form 34B inspection-ready.</p>
+        <ul class="mod-capabilities">
+          <li>Audit programme scheduling with pre-loaded CDSCO and ISO 13485 checklists</li>
+          <li>Finding categorisation (Minor/Major/Critical) and CAPA auto-linkage</li>
+          <li>Inspector-ready evidence pack assembled in one click</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span><span class="reg-tag">21 CFR Part 11</span>
+          <span class="mod-clause">ISO 13485 §8.2.2 Internal audit / CDSCO Schedule 5 Para 10</span>
+        </div>
+      </div>
+
+      <!-- 12. ISO 13485 Tracker / QMS Tracker -->
+      <div class="module-card" data-regs="cdsco iso cfr eumdr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">📈</div>
+          <h3>ISO 13485 / QMS Tracker</h3>
+        </div>
+        <p class="mod-desc">Organisation-wide QMS clause coverage dashboard — see your compliance posture against all four frameworks at a glance.</p>
+        <ul class="mod-capabilities">
+          <li>Clause-by-clause compliance status with evidence linkage</li>
+          <li>Gap identification with prioritised remediation list</li>
+          <li>Management review data export — trend charts and KPI summaries</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span><span class="reg-tag">21 CFR Part 11</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">ISO 13485 §4.1 QMS requirements / Management review §5.6</span>
+        </div>
+      </div>
+
+      <!-- 13. Suppliers -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🚛</div>
+          <h3>Supplier Management</h3>
+        </div>
+        <p class="mod-desc">Approved supplier register, supplier audits, and critical supplier qualification — with performance monitoring.</p>
+        <ul class="mod-capabilities">
+          <li>Approved supplier register with evaluation criteria and scoring</li>
+          <li>Supplier audit scheduling with 30-day requalification alerts</li>
+          <li>Performance monitoring dashboard with trend analysis</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §7.4 Purchasing / CDSCO Schedule 5 Para 7</span>
+        </div>
+      </div>
+
+      <!-- 14. Training -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🎓</div>
+          <h3>Training Records</h3>
+        </div>
+        <p class="mod-desc">Employee training records, competency tracking, and role-based training plans. First thing CDSCO inspectors ask for.</p>
+        <ul class="mod-capabilities">
+          <li>Role-based training plan assignment with completion tracking</li>
+          <li>Competency verification with certificate upload</li>
+          <li>Expiry reminders and mandatory training gates before system access</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §6.2 Human resources / CDSCO Schedule 5 Para 5</span>
+        </div>
+      </div>
+
+      <!-- 15. Teams -->
+      <div class="module-card" data-regs="iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">👥</div>
+          <h3>Teams &amp; Organisation</h3>
+        </div>
+        <p class="mod-desc">Org structure, department management, and cross-functional team configuration with responsibility matrix.</p>
+        <ul class="mod-capabilities">
+          <li>Department hierarchy with cross-module team assignment</li>
+          <li>Responsibility matrix for QMS functions and process owners</li>
+          <li>Org chart linkage to document approval authority</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §5.5 Responsibility and authority</span>
+        </div>
+      </div>
+
+      <!-- 16. Users -->
+      <div class="module-card" data-regs="cfr iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">👤</div>
+          <h3>User Management</h3>
+        </div>
+        <p class="mod-desc">Role-based access control, user provisioning, MFA enforcement, and module-level permissions.</p>
+        <ul class="mod-capabilities">
+          <li>6 role types with granular module-level permissions</li>
+          <li>Mandatory MFA for all users — Cognito-managed identity</li>
+          <li>User audit trail — login, action, and offboarding records</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">21 CFR Part 11</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">21 CFR Part 11 §11.10(d) Access controls / §11.100 Unique user IDs</span>
+        </div>
+      </div>
+
+      <!-- 17. AI Assistant -->
+      <div class="module-card" data-regs="cdsco iso cfr eumdr" id="ai">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🤖</div>
+          <h3>AI Assistant</h3>
+        </div>
+        <p class="mod-desc">Generate SOPs, conduct gap analyses, and get regulatory guidance powered by AI trained on CDSCO and ISO 13485.</p>
+        <ul class="mod-capabilities">
+          <li>SOP generation — describe the process, get a complete compliant draft</li>
+          <li>Regulatory gap analysis against CDSCO, ISO 13485, or 21 CFR Part 11</li>
+          <li>Q&amp;A on CDSCO/ISO clauses with sourced answers</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span><span class="reg-tag">21 CFR Part 11</span><span class="reg-tag">EU MDR</span>
+          <span class="mod-clause">AI-assisted compliance — all outputs require human review and approval</span>
+        </div>
+      </div>
+
+      <!-- 18. Notifications -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🔔</div>
+          <h3>Notifications</h3>
+        </div>
+        <p class="mod-desc">Automated alerts for CAPA due dates, audit schedules, document reviews, training expiry, and supplier requalification.</p>
+        <ul class="mod-capabilities">
+          <li>Email + in-app alerts for every time-sensitive QMS action</li>
+          <li>Configurable escalation — overdue items notify manager automatically</li>
+          <li>Supplier qualification expiry alerts 30 days in advance</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">Supports ISO 13485 §8.2.2 audit scheduling and §6.2 training requirements</span>
+        </div>
+      </div>
+
+      <!-- 19. Super Admin -->
+      <div class="module-card" data-regs="cfr">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">⚙️</div>
+          <h3>Super Admin</h3>
+        </div>
+        <p class="mod-desc">Platform-level administration — organisation management, module toggles, and cross-organisation audit logs.</p>
+        <ul class="mod-capabilities">
+          <li>Multi-organisation management for enterprise deployments</li>
+          <li>Module access control and tier configuration</li>
+          <li>Platform-wide audit trail — every admin action logged</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">21 CFR Part 11</span>
+          <span class="mod-clause">21 CFR Part 11 §11.10 Controls for closed systems</span>
+        </div>
+      </div>
+
+
+      <!-- 20. Inventory Management -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">📦</div>
+          <h3>Inventory Management</h3>
+        </div>
+        <p class="mod-desc">Real-time stock tracking for raw materials, components, and finished goods — with full lot traceability and reorder alerts.</p>
+        <ul class="mod-capabilities">
+          <li>Incoming goods receipt with supplier lot number and CoC linkage</li>
+          <li>Component traceability to finished device — supports recall investigations</li>
+          <li>Minimum stock level alerts and reorder workflow integration</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §7.5.3 Identification and traceability / CDSCO Schedule 5 Para 6</span>
+        </div>
+      </div>
+
+      <!-- 21. Purchase Orders -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🛒</div>
+          <h3>Purchase Orders</h3>
+        </div>
+        <p class="mod-desc">Supplier purchase order creation, approval workflows, and delivery tracking — linked to the Approved Supplier Register and Inventory module.</p>
+        <ul class="mod-capabilities">
+          <li>PO creation with automatic approved-supplier validation</li>
+          <li>Multi-level approval workflow with QA review gate for critical components</li>
+          <li>Delivery confirmation with GRN generation and inventory auto-update</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §7.4 Purchasing / CDSCO Schedule 5 Para 7 — Raw material controls</span>
+        </div>
+      </div>
+
+      <!-- 22. Invoice Management -->
+      <div class="module-card" data-regs="cdsco iso">
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🧾</div>
+          <h3>Invoice Management</h3>
+        </div>
+        <p class="mod-desc">Customer invoice generation linked to shipment records — with device lot numbers, UDI fields, and distribution audit trail for post-market traceability.</p>
+        <ul class="mod-capabilities">
+          <li>Invoice creation auto-populated from Shipment Tracking records</li>
+          <li>Lot number and UDI fields on every invoice for regulatory traceability</li>
+          <li>Invoice history searchable by customer, device, or lot number for recall support</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §7.5.8 Distribution records / CDSCO MDR 2017 — Device distribution traceability</span>
+        </div>
+      </div>
+
+
+      <!-- 23. Project Management & Budget Tracking — In Development -->
+      <div class="module-card" data-regs="cdsco iso" style="position:relative;overflow:hidden;">
+        <div style="position:absolute;top:14px;right:-28px;background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 36px;transform:rotate(45deg);transform-origin:top right;box-shadow:0 2px 6px rgba(0,0,0,0.15);">In Dev</div>
+        <div class="module-card-head">
+          <div class="module-icon-wrap">🗂️</div>
+          <h3>Project Management &amp; Budget Tracking</h3>
+        </div>
+        <p class="mod-desc">End-to-end project execution with milestone tracking, resource allocation, and real-time budget monitoring — purpose-built for regulated medical device product development.</p>
+        <ul class="mod-capabilities">
+          <li>Project timelines with gate review milestones and regulatory deliverable checklists</li>
+          <li>Budget planning and real-time cost tracking with variance alerts</li>
+          <li>Resource allocation across projects with workload visibility</li>
+          <li>DHF and CAPA linkage — project cannot close with open quality actions</li>
+          <li>Management reporting: budget vs. actuals, schedule adherence, risk status</li>
+        </ul>
+        <div class="mod-footer">
+          <span class="reg-tag">CDSCO</span><span class="reg-tag">ISO 13485</span>
+          <span class="mod-clause">ISO 13485 §7.1 Planning of product realisation / §5.6 Management review</span>
+        </div>
+      </div>
+
+    </div><!-- /modules-grid -->
+  </div>
+</section>
+
+<!-- CTA Strip -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>See MDCN Studio in Action</h2>
+    <p>Book a 30-minute guided demo. We'll show you how all 23 modules fit your existing quality system.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="mailto:admin@mdcyclonova.com?subject=Demo Request — MDCN Studio Features" class="btn btn-gold btn-lg">Book a Demo</a>
+      <a href="https://4rgdsiupne.ap-south-1.awsapprunner.com/login" class="btn btn-ghost btn-lg">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="assets/mdcn-logo.svg" alt="MDCN Studio" style="height:28px;filter:brightness(0) invert(1);opacity:0.85;"/></a>
+        <p>The QMS Built for Global Medical Device Manufacturers.</p>
+        <div class="footer-india-note">🌏 AWS Multi-Region — Data stays in your region</div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">All 23 Modules</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="compliance.html">Compliance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Compliance</h4>
+        <ul>
+          <li><a href="compliance.html#cdsco">CDSCO MDR 2017</a></li>
+          <li><a href="compliance.html#iso">ISO 13485:2016</a></li>
+          <li><a href="compliance.html#cfr">FDA 21 CFR Part 11</a></li>
+          <li><a href="compliance.html#eumdr">EU MDR 2017/745</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="mailto:admin@mdcyclonova.com">admin@mdcyclonova.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MDCycloNova. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="index.html">Home</a>
+        <a href="mailto:admin@mdcyclonova.com">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const toggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  // Module filter
+  function filterModules(reg, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.module-card').forEach(card => {
+      if (reg === 'all') {
+        card.classList.remove('hidden');
+      } else {
+        const regs = card.dataset.regs || '';
+        card.classList.toggle('hidden', !regs.includes(reg));
+      }
+    });
+  }
+</script>
+</body>
+</html>

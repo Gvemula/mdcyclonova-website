@@ -1,0 +1,11 @@
+<svg viewBox="0 0 180 44" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MDCN Studio">
+  <!-- Medical cross icon -->
+  <rect x="2" y="16" width="24" height="10" rx="3" fill="#1A56DB"/>
+  <rect x="9" y="9" width="10" height="24" rx="3" fill="#1A56DB"/>
+  <!-- Small gold accent dot -->
+  <circle cx="30" cy="10" r="3" fill="#EF9F27"/>
+  <!-- MDCN wordmark -->
+  <text x="40" y="30" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-weight="800" font-size="22" fill="#1A56DB" letter-spacing="-0.5">MDCN</text>
+  <!-- Studio wordmark -->
+  <text x="108" y="30" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-weight="400" font-size="17" fill="#6B7280" letter-spacing="0.2">Studio</text>
+</svg>

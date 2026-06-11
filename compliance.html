@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compliance — MDCN Studio | CDSCO MDR 2017, ISO 13485, 21 CFR Part 11, EU MDR</title>
+  <meta name="description" content="Complete compliance coverage: CDSCO MDR 2017 (12/12 clauses), ISO 13485:2016 (28/28 clauses), FDA 21 CFR Part 11 (17/17 sections), EU MDR 2017/745 (11/12 Annex IX requirements)."/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='12' width='24' height='8' rx='2' fill='%231A56DB'/%3E%3Crect x='12' y='4' width='8' height='24' rx='2' fill='%231A56DB'/%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="assets/mdcn-logo.svg" alt="MDCN Studio" class="logo-img"/></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="features.html">Product</a></li>
+        <li><a href="compliance.html" style="color:var(--primary);">Compliance</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta-group">
+      <a href="https://4rgdsiupne.ap-south-1.awsapprunner.com/login" class="btn btn-outline btn-sm">Sign In</a>
+      <a href="mailto:admin@mdcyclonova.com?subject=Demo Request" class="btn btn-primary btn-sm">Book a Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">Compliance Coverage</div>
+    <h1>Every Regulation. Every Clause. Covered.</h1>
+    <p>MDCN Studio is the platform that covers CDSCO MDR 2017, ISO 13485:2016, FDA 21 CFR Part 11, and EU MDR 2017/745 simultaneously. Here is exactly how.</p>
+  </div>
+</section>
+
+<!-- Coverage Summary -->
+<section class="section-alt">
+  <div class="container">
+    <div class="coverage-summary">
+      <div class="coverage-card">
+        <div class="coverage-score">12/12</div>
+        <h4>CDSCO MDR 2017</h4>
+        <p>Schedule 5 QMS requirements — full coverage</p>
+      </div>
+      <div class="coverage-card">
+        <div class="coverage-score">28/28</div>
+        <h4>ISO 13485:2016</h4>
+        <p>Key clauses Sections 4–8 — full coverage</p>
+      </div>
+      <div class="coverage-card">
+        <div class="coverage-score">17/17</div>
+        <h4>FDA 21 CFR Part 11</h4>
+        <p>Applicable sections — full coverage</p>
+      </div>
+      <div class="coverage-card">
+        <div class="coverage-score">11/12</div>
+        <h4>EU MDR 2017/745</h4>
+        <p>Annex IX requirements — EUDAMED API roadmap Q3 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Regulation Tabs -->
+<section>
+  <div class="container">
+    <div class="reg-tabs" role="tablist">
+      <button class="reg-tab-btn active" onclick="switchRegTab('cdsco', this)" id="cdsco">CDSCO MDR 2017</button>
+      <button class="reg-tab-btn" onclick="switchRegTab('iso', this)" id="iso">ISO 13485:2016</button>
+      <button class="reg-tab-btn" onclick="switchRegTab('cfr', this)" id="cfr">FDA 21 CFR Part 11</button>
+      <button class="reg-tab-btn" onclick="switchRegTab('eumdr', this)" id="eumdr">EU MDR 2017/745</button>
+    </div>
+
+    <!-- CDSCO Panel -->
+    <div class="reg-panel active" id="panel-cdsco">
+      <div class="reg-header cdsco">
+        <span class="reg-badge cdsco" style="margin-bottom:8px;display:inline-block;">CDSCO MDR 2017</span>
+        <h2>Central Drugs Standard Control Organisation — Medical Devices Rules 2017</h2>
+        <p>India's primary medical device regulatory framework. Schedule 5 defines the Quality Management System requirements for all licensed manufacturers. All 12 Schedule 5 requirements are covered in MDCN Studio.</p>
+      </div>
+      <div class="reg-table-wrap">
+        <table class="reg-table">
+          <thead>
+            <tr>
+              <th style="width:18%;">Clause</th>
+              <th style="width:26%;">Requirement</th>
+              <th style="width:36%;">MDCN Studio Coverage</th>
+              <th style="width:20%;">Module</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Schedule 5, Para 1</td>
+              <td>Quality Management System — documented QMS covering all manufacturing activities</td>
+              <td>Document Control with QMS document hierarchy; SOP templates pre-configured for Schedule 5</td>
+              <td><span class="mod-pill">Documents</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 2</td>
+              <td>Document control — version control, approval, distribution of quality documents</td>
+              <td>Version-controlled document lifecycle: Draft → Review → Approved → Superseded; role-based approval gates</td>
+              <td><span class="mod-pill">Documents</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 3</td>
+              <td>Records control — identification, storage, protection, retention, disposal</td>
+              <td>Immutable record storage with S3 Object Lock WORM; configurable retention periods; role-based access audit</td>
+              <td><span class="mod-pill">Documents</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 4</td>
+              <td>Management responsibility — quality policy, objectives, management review</td>
+              <td>QMS Tracker for management review agenda, minutes, action items; quality objectives tracking</td>
+              <td><span class="mod-pill">QMS Tracker</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 5</td>
+              <td>Resource management — human resources, training, competency records</td>
+              <td>Training module: role-based training assignment, completion tracking, competency assessments</td>
+              <td><span class="mod-pill">Training</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 6</td>
+              <td>Product realisation — planning, design, purchasing, production controls</td>
+              <td>DHF, Travellers, Shipments, Supplier Management with approved vendor controls</td>
+              <td><span class="mod-pill">DHF · Travellers · Suppliers</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 7</td>
+              <td>Purchasing controls — supplier qualification, incoming inspection</td>
+              <td>Supplier qualification workflow; approved vendor list maintenance; supplier audit scheduling</td>
+              <td><span class="mod-pill">Suppliers</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 8</td>
+              <td>Non-conformance control — identification, segregation, disposition</td>
+              <td>NCR module: identification, root cause, disposition, CAPA linkage</td>
+              <td><span class="mod-pill">CAPA &amp; NCR</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 9</td>
+              <td>Corrective and preventive action — root cause, action plan, effectiveness verification</td>
+              <td>CAPA module: structured 8D workflow, action plan with owner/due date, effectiveness review gate</td>
+              <td><span class="mod-pill">CAPA &amp; NCR</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 10</td>
+              <td>Internal audit — planned audits, findings, corrective actions</td>
+              <td>Audit Management: annual audit schedule, checklist-based findings, CAPA linkage</td>
+              <td><span class="mod-pill">Audits</span></td>
+            </tr>
+            <tr>
+              <td>Schedule 5, Para 11</td>
+              <td>Complaint handling and post-market vigilance</td>
+              <td>CRM module: customer complaint logging, investigation, reporting, trend analysis</td>
+              <td><span class="mod-pill">CRM</span></td>
+            </tr>
+            <tr>
+              <td>Form 34B</td>
+              <td>Manufacturing licence inspection — document readiness for CDSCO inspector</td>
+              <td>Audit-ready dashboard: one-click document package assembly for Form 34B inspection categories</td>
+              <td><span class="mod-pill">Documents · QMS Tracker</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ISO Panel -->
+    <div class="reg-panel" id="panel-iso">
+      <div class="reg-header iso">
+        <span class="reg-badge iso" style="margin-bottom:8px;display:inline-block;">ISO 13485:2016</span>
+        <h2>Medical Devices — Quality Management Systems (ISO 13485:2016)</h2>
+        <p>The international standard for medical device QMS. Mandatory for CE marking and required by most export markets. MDCN Studio covers all 28 key clauses in Sections 4–8.</p>
+      </div>
+      <div class="reg-table-wrap">
+        <table class="reg-table">
+          <thead>
+            <tr>
+              <th style="width:14%;">Clause</th>
+              <th style="width:28%;">Requirement</th>
+              <th style="width:38%;">MDCN Studio Coverage</th>
+              <th style="width:20%;">Module</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>§4.1</td><td>General QMS requirements — processes, sequence, interactions</td><td>QMS process map; inter-module workflow linkages (audit finding → CAPA auto-creation)</td><td><span class="mod-pill">QMS Tracker</span></td></tr>
+            <tr><td>§4.2.1</td><td>General documentation requirements — QMS hierarchy</td><td>Document hierarchy: QMS Manual → Procedures → Work Instructions → Records</td><td><span class="mod-pill">Documents</span></td></tr>
+            <tr><td>§4.2.3</td><td>Control of documents — approval, review, update, distribution</td><td>Version control with mandatory approval workflow; supersession control; controlled distribution list</td><td><span class="mod-pill">Documents</span></td></tr>
+            <tr><td>§4.2.4</td><td>Control of records — legibility, identification, storage, retrieval</td><td>WORM-locked record storage; indexed retrieval; role-based access; retention schedule</td><td><span class="mod-pill">Documents</span></td></tr>
+            <tr><td>§5.1</td><td>Management commitment — quality policy, management review</td><td>QMS Tracker: quality policy management; management review with attendance and action tracking</td><td><span class="mod-pill">QMS Tracker</span></td></tr>
+            <tr><td>§5.6</td><td>Management review — inputs, outputs, actions</td><td>Structured management review template: required inputs (audit results, CAPA status, complaints) and outputs</td><td><span class="mod-pill">QMS Tracker</span></td></tr>
+            <tr><td>§6.2</td><td>Human resources — competence, training, awareness</td><td>Training module: competency requirements per role, training plan, completion records</td><td><span class="mod-pill">Training</span></td></tr>
+            <tr><td>§6.3</td><td>Infrastructure — maintenance records</td><td>Maintenance log within Travellers module; equipment calibration records</td><td><span class="mod-pill">Travellers</span></td></tr>
+            <tr><td>§7.1</td><td>Planning of product realisation</td><td>Project module: device development project planning with QMS document linkages</td><td><span class="mod-pill">Projects</span></td></tr>
+            <tr><td>§7.2</td><td>Customer-related processes — requirement review, communication</td><td>CRM: customer requirements capture, review records, complaint management</td><td><span class="mod-pill">CRM</span></td></tr>
+            <tr><td>§7.3</td><td>Design and development — planning, inputs, outputs, review, V&amp;V</td><td>DHF: full design control lifecycle from input to validation; design review gate management</td><td><span class="mod-pill">DHF</span></td></tr>
+            <tr><td>§7.3.2</td><td>Design and development planning</td><td>DHF project plan with stage gates, responsible parties, and document deliverable requirements</td><td><span class="mod-pill">DHF</span></td></tr>
+            <tr><td>§7.3.3</td><td>Design inputs</td><td>Design input records with traceability to regulatory requirements and user needs</td><td><span class="mod-pill">DHF</span></td></tr>
+            <tr><td>§7.3.6</td><td>Design verification</td><td>Verification protocol and report management; test result records with approver e-signature</td><td><span class="mod-pill">DHF</span></td></tr>
+            <tr><td>§7.3.7</td><td>Design validation</td><td>Clinical/usability validation protocol and report; human factors records</td><td><span class="mod-pill">DHF</span></td></tr>
+            <tr><td>§7.4</td><td>Purchasing — supplier evaluation, selection, monitoring</td><td>Supplier qualification: evaluation criteria, scoring, approval, monitoring schedule</td><td><span class="mod-pill">Suppliers</span></td></tr>
+            <tr><td>§7.5.1</td><td>Production and service provision — controlled conditions</td><td>Traveller module: step-by-step production instruction sign-off; in-process inspection records</td><td><span class="mod-pill">Travellers</span></td></tr>
+            <tr><td>§7.5.3</td><td>Identification and traceability</td><td>Batch/lot tracking in Travellers and Shipments; device identification records</td><td><span class="mod-pill">Travellers · Shipments</span></td></tr>
+            <tr><td>§7.5.8</td><td>Handling, storage, distribution records</td><td>Shipments: dispatch records, storage condition records, distribution log</td><td><span class="mod-pill">Shipments</span></td></tr>
+            <tr><td>§7.6</td><td>Control of monitoring and measuring equipment</td><td>Calibration records in Travellers; calibration schedule; out-of-calibration CAPA trigger</td><td><span class="mod-pill">Travellers · CAPA</span></td></tr>
+            <tr><td>§8.2.1</td><td>Feedback — customer complaint and post-market data</td><td>CRM complaint tracking; trend analysis; MDR report drafting</td><td><span class="mod-pill">CRM</span></td></tr>
+            <tr><td>§8.2.2</td><td>Internal audit</td><td>Audit Management: annual schedule, checklist-based audits, findings, closure</td><td><span class="mod-pill">Audits</span></td></tr>
+            <tr><td>§8.3</td><td>Control of non-conforming product</td><td>NCR module: identification, segregation flag, disposition decision, CAPA linkage</td><td><span class="mod-pill">CAPA &amp; NCR</span></td></tr>
+            <tr><td>§8.4</td><td>Analysis of data — trends, supplier performance, product conformity</td><td>QMS Tracker dashboard: CAPA trend charts, audit finding trends, supplier performance scores</td><td><span class="mod-pill">QMS Tracker</span></td></tr>
+            <tr><td>§8.5</td><td>Improvement — CAPA, preventive action</td><td>CAPA module: structured root cause analysis, action planning, effectiveness verification</td><td><span class="mod-pill">CAPA &amp; NCR</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 21 CFR Part 11 Panel -->
+    <div class="reg-panel" id="panel-cfr">
+      <div class="reg-header cfr">
+        <span class="reg-badge cfr" style="margin-bottom:8px;display:inline-block;">FDA 21 CFR Part 11</span>
+        <h2>FDA — Electronic Records; Electronic Signatures (21 CFR Part 11)</h2>
+        <p>The FDA's regulation on electronic records and signatures. Required for any manufacturer selling into the US market or seeking FDA clearance. MDCN Studio covers all 17 applicable sections.</p>
+      </div>
+      <div class="reg-table-wrap">
+        <table class="reg-table">
+          <thead>
+            <tr>
+              <th style="width:14%;">Section</th>
+              <th style="width:28%;">Requirement</th>
+              <th style="width:38%;">MDCN Studio Coverage</th>
+              <th style="width:20%;">Module</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>§11.10(a)</td><td>Validation of closed systems</td><td>System-level validation documentation (IQ/OQ/PQ) maintained by MDCycloNova; available on request</td><td><span class="mod-pill">Platform</span></td></tr>
+            <tr><td>§11.10(b)</td><td>Ability to generate accurate copies of records</td><td>Export function for all records in PDF; raw data export (CSV/JSON)</td><td><span class="mod-pill">All Modules</span></td></tr>
+            <tr><td>§11.10(c)</td><td>Protection of records — accuracy and readiness for inspection</td><td>S3 Object Lock WORM storage prevents modification or deletion; immutable record flag on all compliance records</td><td><span class="mod-pill">Documents</span></td></tr>
+            <tr><td>§11.10(d)</td><td>Limiting access to authorised individuals</td><td>Role-based access control (RBAC); module-level permission gates; session timeout; MFA via Cognito</td><td><span class="mod-pill">Users · Teams</span></td></tr>
+            <tr><td>§11.10(e)</td><td>Audit trail — secure, computer-generated, time-stamped</td><td>Automatic audit trail for every create/update/delete/approve action; tamper-evident; cannot be disabled</td><td><span class="mod-pill">All Modules</span></td></tr>
+            <tr><td>§11.10(f)</td><td>Operational system checks — enforcing event sequencing</td><td>Workflow enforcement: documents cannot be approved without review; CAPA cannot close without effectiveness check</td><td><span class="mod-pill">Documents · CAPA</span></td></tr>
+            <tr><td>§11.10(g)</td><td>Authority checks — only authorised individuals can sign</td><td>Role-based signature authority matrix; configured per document type and record class</td><td><span class="mod-pill">Documents · Teams</span></td></tr>
+            <tr><td>§11.10(h)</td><td>Device checks — valid source of data entry</td><td>Session-bound authentication; server-side input validation; all inputs logged with session ID</td><td><span class="mod-pill">Platform</span></td></tr>
+            <tr><td>§11.10(i)</td><td>Personnel training requirements for system use</td><td>System training records; role-based training assignment; mandatory training gate before system access</td><td><span class="mod-pill">Training</span></td></tr>
+            <tr><td>§11.10(j)</td><td>Audit trail availability for FDA inspection</td><td>Audit trail export function; FDA inspection mode (read-only view of full record history)</td><td><span class="mod-pill">All Modules</span></td></tr>
+            <tr><td>§11.10(k)</td><td>Operational controls — documentation of record changes</td><td>Every field change logged with: prior value, new value, user ID, timestamp, reason for change</td><td><span class="mod-pill">Audit Trail</span></td></tr>
+            <tr><td>§11.50</td><td>Signature manifestations — name, date/time, meaning</td><td>E-signature modal displays: signer printed name, date and time of signature, meaning/purpose</td><td><span class="mod-pill">Documents · CAPA</span></td></tr>
+            <tr><td>§11.70</td><td>Signature/record linking — signatures linked to records</td><td>Cryptographic binding of e-signature to specific record version; re-signing required if record modified post-signature</td><td><span class="mod-pill">All Signed Records</span></td></tr>
+            <tr><td>§11.100</td><td>Electronic signatures unique to one individual</td><td>Cognito-managed unique user IDs; no shared accounts enforced; account sharing detection</td><td><span class="mod-pill">Users</span></td></tr>
+            <tr><td>§11.100(b)</td><td>Electronic signatures not reused or reassigned</td><td>User ID retirement on offboarding; retired IDs not reassigned; offboarding audit trail</td><td><span class="mod-pill">Users · Teams</span></td></tr>
+            <tr><td>§11.200(a)</td><td>Non-biometric e-signatures — two distinct ID components</td><td>Username + password as first component; session-specific signature PIN or re-authentication as second</td><td><span class="mod-pill">Auth · E-Signature</span></td></tr>
+            <tr><td>§11.200(a)(2)</td><td>Continued sessions — one component for subsequent signings</td><td>Session-bound signature: first signing requires re-authentication; subsequent within session use session token</td><td><span class="mod-pill">Auth · E-Signature</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- EU MDR Panel -->
+    <div class="reg-panel" id="panel-eumdr">
+      <div class="reg-header eumdr">
+        <span class="reg-badge eumdr" style="margin-bottom:8px;display:inline-block;">EU MDR 2017/745</span>
+        <h2>European Union Medical Device Regulation (EU MDR 2017/745)</h2>
+        <p>The EU's medical device regulatory framework applicable since May 2021. Annex IX defines quality system requirements for Class IIa, IIb, and III devices. MDCN Studio covers 11 of 12 Annex IX requirements — EUDAMED direct submission API is roadmap Q3 2026.</p>
+      </div>
+      <div class="reg-table-wrap">
+        <table class="reg-table">
+          <thead>
+            <tr>
+              <th style="width:18%;">Clause</th>
+              <th style="width:26%;">Requirement</th>
+              <th style="width:36%;">MDCN Studio Coverage</th>
+              <th style="width:20%;">Module</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Annex IX, 2.1</td><td>Quality management system — organisational structure, responsibilities</td><td>QMS Tracker: organisational quality function documentation; management responsibility assignment</td><td><span class="mod-pill">QMS Tracker · Teams</span></td></tr>
+            <tr><td>Annex IX, 2.2</td><td>Resource management — qualified personnel, training</td><td>Training module: role qualification records, competency matrix, training history</td><td><span class="mod-pill">Training</span></td></tr>
+            <tr><td>Annex IX, 2.3</td><td>Document and record control</td><td>Full document control with version history, approval audit trail, WORM record protection</td><td><span class="mod-pill">Documents</span></td></tr>
+            <tr><td>Annex IX, 2.4</td><td>Clinical evaluation and post-market clinical follow-up</td><td>DHF: clinical evaluation document management; post-market surveillance data in CRM</td><td><span class="mod-pill">DHF · CRM</span></td></tr>
+            <tr><td>Annex IX, 2.5</td><td>Vigilance and post-market surveillance</td><td>CRM complaint module with EU MDR vigilance report templates; trend analysis</td><td><span class="mod-pill">CRM · CAPA</span></td></tr>
+            <tr><td>Annex IX, 2.6</td><td>Risk management throughout lifecycle</td><td>Risk Management: ISO 14971-aligned, linked to DHF and post-market data</td><td><span class="mod-pill">Risks</span></td></tr>
+            <tr><td>Annex IX, 2.7</td><td>Design and development controls</td><td>Design History File (DHF): full §7.3 design control lifecycle</td><td><span class="mod-pill">DHF</span></td></tr>
+            <tr><td>Annex IX, 2.8</td><td>Production and service controls</td><td>Travellers: production record management; in-process and final inspection records</td><td><span class="mod-pill">Travellers</span></td></tr>
+            <tr><td>Annex IX, 2.9</td><td>Purchasing and supplier controls</td><td>Supplier management: qualification, monitoring, incoming inspection</td><td><span class="mod-pill">Suppliers</span></td></tr>
+            <tr><td>Annex IX, 2.10</td><td>Identification and traceability — UDI requirements</td><td>Shipments: UDI/batch tracking fields; device identification records. Note: EUDAMED direct API is roadmap Q3 2026</td><td><span class="mod-pill">Shipments</span></td></tr>
+            <tr><td>Annex IX, 2.11</td><td>Corrective and preventive action</td><td>CAPA module: structured CAPA workflow with root cause, action plan, effectiveness verification</td><td><span class="mod-pill">CAPA &amp; NCR</span></td></tr>
+            <tr><td>Annex IX, 2.12</td><td>Improvement — measurement, analysis, improvement processes</td><td>QMS Tracker: KPI dashboard, trend analysis, management review inputs</td><td><span class="mod-pill">QMS Tracker</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Module × Regulation Matrix -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Module × Regulation Coverage Matrix</h2>
+      <p>Which MDCN Studio modules satisfy which regulatory frameworks.</p>
+    </div>
+    <div class="matrix-wrap">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th style="text-align:left;">Module</th>
+            <th>CDSCO MDR 2017</th>
+            <th>ISO 13485:2016</th>
+            <th>21 CFR Part 11</th>
+            <th>EU MDR 2017/745</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>DHF</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td></tr>
+          <tr><td>Documents &amp; SOPs</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td></tr>
+          <tr><td>CAPA &amp; NCR</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td><td><span class="mat-yes">✓</span></td></tr>
+          <tr><td>Audits</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td></tr>
+          <tr><td>Risk Management</td><td><span class="mat-no">—</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td><td><span class="mat-yes">✓</span></td></tr>
+          <tr><td>Suppliers</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td><td><span class="mat-no">—</span></td></tr>
+          <tr><td>Training</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td><td><span class="mat-no">—</span></td></tr>
+          <tr><td>Travellers / BHR</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td><td><span class="mat-no">—</span></td></tr>
+          <tr><td>Shipments</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td><td><span class="mat-yes">✓</span></td></tr>
+          <tr><td>QMS Tracker</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td></tr>
+          <tr><td>CRM</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td><td><span class="mat-yes">✓</span></td></tr>
+          <tr><td>User Management</td><td><span class="mat-no">—</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-no">—</span></td></tr>
+          <tr><td>AI Assistant</td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td><td><span class="mat-yes">✓</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Download CTA -->
+<section>
+  <div class="container" style="max-width:680px;">
+    <div style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));border-radius:var(--radius-md);padding:48px;text-align:center;color:var(--white);">
+      <h2 style="color:var(--white);margin-bottom:12px;">Download Compliance Brief</h2>
+      <p style="color:rgba(255,255,255,0.85);margin-bottom:28px;">Get a detailed document covering MDCN Studio's regulatory coverage, validation approach, and e-signature methodology — ready to share with your RA Head or auditor.</p>
+      <a href="mailto:admin@mdcyclonova.com?subject=Compliance Brief Request — MDCN Studio" class="btn btn-gold btn-lg">Request Compliance Brief</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="assets/mdcn-logo.svg" alt="MDCN Studio" style="height:28px;filter:brightness(0) invert(1);opacity:0.85;"/></a>
+        <p>The QMS Built for Global Medical Device Manufacturers.</p>
+        <div class="footer-india-note">🌏 AWS Multi-Region — Data stays in your region</div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul><li><a href="features.html">All 23 Modules</a></li><li><a href="pricing.html">Pricing</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Compliance</h4>
+        <ul>
+          <li><a href="#" onclick="switchRegTab('cdsco',document.querySelector('[onclick*=cdsco]'));return false;">CDSCO MDR 2017</a></li>
+          <li><a href="#" onclick="switchRegTab('iso',document.querySelector('[onclick*=iso]'));return false;">ISO 13485:2016</a></li>
+          <li><a href="#" onclick="switchRegTab('cfr',document.querySelector('[onclick*=cfr]'));return false;">21 CFR Part 11</a></li>
+          <li><a href="#" onclick="switchRegTab('eumdr',document.querySelector('[onclick*=eumdr]'));return false;">EU MDR 2017/745</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="resources.html">Resources</a></li><li><a href="mailto:admin@mdcyclonova.com">Contact</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MDCycloNova. All rights reserved.</span>
+      <div class="footer-bottom-links"><a href="index.html">Home</a><a href="mailto:admin@mdcyclonova.com">admin@mdcyclonova.com</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => { const open = navLinks.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
+
+  function switchRegTab(id, btn) {
+    document.querySelectorAll('.reg-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.reg-tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('panel-' + id).classList.add('active');
+    btn.classList.add('active');
+    document.getElementById('panel-' + id).scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Handle anchor links e.g. compliance.html#cdsco
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '');
+    if (['cdsco','iso','cfr','eumdr'].includes(hash)) {
+      const btn = document.querySelector('.reg-tab-btn[onclick*="' + hash + '"]');
+      if (btn) switchRegTab(hash, btn);
+    }
+  });
+</script>
+</body>
+</html>
